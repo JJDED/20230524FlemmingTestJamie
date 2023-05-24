@@ -2,7 +2,7 @@
 
 namespace _20230524FlemmingTestJamie.Models;
 //Exercise 1
-public class Elephant : Animal
+public class Elephant : Animal, IElephant
 {
     //Exercise 3
     public void CreateDelete()
@@ -53,6 +53,12 @@ public class Elephant : Animal
             CreateDelete();
         }
     }
+
+    public void CreateDelete(Elephant elephant)
+    {
+        throw new NotImplementedException();
+    }
+
     //Exercise 6 -- Ikke færdig, nåede ikke videre med den.
     public void TwoToFive()
     {
